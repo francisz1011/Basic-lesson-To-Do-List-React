@@ -1,38 +1,51 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addTask {
+  height: 30vh;
+  background-color: dodgerblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list {
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.list div {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list h1 {
+  margin: 0;
+}
+
+.list button {
+  width: 25px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.buttons {
+  margin-right: 20px;
+  word-spacing: normal;
 }
